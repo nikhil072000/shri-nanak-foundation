@@ -1,0 +1,23 @@
+.images {
+    img {
+        margin: 10px;
+    }
+}
+
+.heading {
+    h1 {
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    width: 100%;
+    display: flex;
+    background-image: url("../../assets/img/collage.jpg");
+    min-height: 390px;
+    padding-top: 26px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
