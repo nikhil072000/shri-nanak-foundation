@@ -1,22 +1,31 @@
 <div class="d-flex flex-column gallery align-items-center">
     <div class="heading">
         <h1>Gallery</h1>
-    </div>
-    <div class="px-5 mt-5">
-        <h2 style="text-align: center;">Celebration of...... - Year</h2>
-        <div class="images">
-                @for (img of [1,2,3,4,5,6,7,8,9,2]; track $index) {
-                    <img src="../../assets/img/image-1.jpg">
-                }
+        <div class="bg-img">
         </div>
     </div>
-
-    <div class="px-5 mt-5">
-        <h2 style="text-align: center;">Celebration of...... - Year</h2>
-        <div class="images">
+    <div class="image-collection">
+        <div class="px-5 mt-5">
+            <h2 class="event-heading">Yoga Day - 2024</h2>
+            <p>We celebrated International Yoga Day. It was a wonderful way to connect with the mind, body, and spirit,
+                and we felt the positive vibes all around!
+                Yoga is a practice for everyone, and it offers so many benefits – from increased flexibility and
+                strength to stress
+                reduction and inner peace.
+            </p>
+            <div class=" images justify-content-center d-flex flex-wrap">
                 @for (img of [1,2,3,4,5,6,7,8,9,2]; track $index) {
-                    <img src="../../assets/img/image-1.jpg">
+                <img src="../../assets/img/image-1.jpg">
                 }
+            </div>
+        </div>
+        <div class="px-5 mt-5" style="background-color: #F6F6F6;">
+            <h2 class="event-heading">Ram Lalla Rath Yatra - 2024</h2>
+            <div class="images justify-content-center d-flex flex-wrap">
+                @for (img of [1,2,3,4,5,6,7,8,9,2]; track $index) {
+                <img src="../../assets/img/image-1.jpg">
+                }
+            </div>
         </div>
     </div>
 </div>

@@ -1,0 +1,17 @@
+.heading {
+    width: 100%;
+    display: flex;
+    background-image: url("../../assets/img/about-us-bg.jpg");
+    min-height: 390px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us {
+    padding: 26px;
+    .snf {
+        text-align: center;
+    }
+}
