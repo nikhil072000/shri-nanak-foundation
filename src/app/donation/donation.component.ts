@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './donation.component.scss'
 })
 export class DonationComponent {
-
+  showQr() {
+    window.open('../../assets/img/qr.png', '_blank');
+  }
 }
