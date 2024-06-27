@@ -1,16 +1,16 @@
 footer {
     padding: 25px;
-    background-color: #99A2A6;
-
+    background-color: #062424;
+    color: white;
     @media (min-width: 768px) { 
         .self {
-            border-right: 1px solid black;
+            border-right: 1px solid white;
         }
     }
 
     @media (max-width: 767.9px) { 
         .self {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
             padding-bottom: 24px;
             margin-bottom: 24px;
         }
@@ -25,23 +25,24 @@ footer {
         a {
             margin: 6px;
             height: 48px;
+            filter: brightness(0) saturate(100%) invert(93%) sepia(10%) saturate(622%) hue-rotate(196deg) brightness(106%) contrast(94%);
         }
     }
     .quick {
         cursor: pointer;
         @media (min-width: 768px) { 
             width: 310px;
-            border-right: 1px solid black;
+            border-right: 1px solid white;
             margin-left: 32px;
         }
 
         @media (max-width: 767.9px) { 
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
             padding-bottom: 24px;
             margin-bottom: 24px;
         }
         a {
-            color: black;
+            color: white;
             text-decoration: none;
         }
     }
@@ -61,6 +62,7 @@ footer {
 
         img {
             margin-right: 10px;
+            filter: brightness(0) saturate(100%) invert(93%) sepia(10%) saturate(622%) hue-rotate(196deg) brightness(106%) contrast(94%);
         }
 
         p {
