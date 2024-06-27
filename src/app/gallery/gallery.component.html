@@ -15,7 +15,7 @@
             </p>
             <div class=" images justify-content-center d-flex flex-wrap">
                 @for (imge of [1,2,3,4,5,6,7,8,9,10,11,12,13]; track $index) {
-                    <img class="image" loading="lazy" [src]="'../../assets/img/gallery/gallery-('+imge+').jpeg'">
+                    <img class="image" loading="lazy" src='../../assets/img/gallery/gallery-({{imge}}).jpeg'>
                 }
             </div>
         </div>
