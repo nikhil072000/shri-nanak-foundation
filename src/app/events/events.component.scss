@@ -43,19 +43,22 @@
     }
 
     .event-detail {
-        display: flex;
-        flex-direction: row;
+        // display: flex;
+        // flex-direction: row;
         justify-content: space-evenly;
 
         .image {
             width: 40%;
-            // max-height: 450px;
+            @media (max-width: 576px) {
+                width: 100%;
+            }   
         }
     
         .register-btn {
             display: flex;
             align-items: center;
-            // margin: auto;
+            margin-top: 16px;
+            justify-content: center;
 
             a {
                 padding: 6px 12px;
