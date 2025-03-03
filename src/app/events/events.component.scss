@@ -64,7 +64,10 @@
         .event-detail {
             width: 45%;
             margin-left: 16px;
-            justify-content: center;
+            // justify-content: center;
+            position: sticky;   // fix for sticky
+            top: 30px;          // fix for sticky
+            height: fit-content;// fix for sticky
 
             @media (max-width: 576px) {
                 width: inherit;
