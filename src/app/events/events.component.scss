@@ -25,53 +25,60 @@
     }
 }
 
+.w-web {
+    width: -webkit-fill-available;
+}
 .events {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 36px;
     padding: 16px 26px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 10px;
+    width: -webkit-fill-available;
 
-    .event-title {
-        font-weight: 500;
-        font-size: larger;
+    @media (max-width: 576px) {
+    padding: 10px 16px;
+    }   
 
-        b{ 
-            text-decoration: underline;
-        }
-    }
+    .content {
+        justify-content: space-between;
+        .event-text {
+            font-weight: 500;
+            width: 45%;
+            text-align: justify;
 
-    .event-detail {
-        // display: flex;
-        // flex-direction: row;
-        justify-content: space-evenly;
-
-        .image {
-            width: 40%;
             @media (max-width: 576px) {
-                width: 100%;
+                width: fit-content;
             }   
+
         }
-    
-        .register-btn {
-            display: flex;
-            align-items: center;
-            margin-top: 16px;
+
+        .event-detail {
+            width: 45%;
+            margin-left: 16px;
             justify-content: center;
 
-            a {
-                padding: 6px 12px;
-                border-radius: 8px;
-                text-decoration: none;
-                background-color: #717d4b;
-                color: white;
-                &:hover {
-                    border: 2px solid #717d4b;
+            @media (max-width: 576px) {
+                width: inherit;
+            }   
+
+            .register-btn {
+                display: flex;
+                align-items: center;
+                margin-top: 16px;
+                justify-content: center;
+
+                a {
+                    padding: 10px 16px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    background-color: #717d4b;
+                    color: white;
+
+                    &:hover {
+                        border: 2px solid #717d4b;
+                    }
                 }
             }
         }
     }
-
-
 }
