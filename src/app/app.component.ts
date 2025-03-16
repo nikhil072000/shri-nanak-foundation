@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { GalleryComponent } from "./gallery/gallery.component";
 import { EventsComponent } from './events/events.component';
+import { EventDetailsComponent } from './event-details/event-details.component';
 import { MediaCoverageComponent } from './media-coverage/media-coverage.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DonationComponent } from './donation/donation.component';
@@ -13,7 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, RouterLink, RouterLinkActive, GalleryComponent, DonationComponent, AboutUsComponent, MediaCoverageComponent, EventsComponent, HeaderComponent, FooterComponent]
+    imports: [RouterOutlet, RouterLink, RouterLinkActive, GalleryComponent, DonationComponent, AboutUsComponent, MediaCoverageComponent, EventsComponent, EventDetailsComponent, HeaderComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'shri-nanak-foundation';
