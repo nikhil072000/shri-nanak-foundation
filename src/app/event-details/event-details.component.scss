@@ -27,101 +27,103 @@
 
 .w-web {
     width: -webkit-fill-available;
-}
 
-.back-btn {
-    border: 1px solid #6c757d;
-    /* Subtle gray */
-    border-radius: 8px;
-    background-color: #717d4b;
-    width: fit-content;
-    padding: 0px 16px;
-    // display: inline-flex;
-    // align-items: center;
-    color: white;
-    /* Subtle gray */
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.2s ease-in-out;
-}
+    .events {
+        margin-bottom: 36px;
+        padding: 16px 26px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        border-radius: 10px;
+        width: -webkit-fill-available;
 
-.back-btn:hover {
-    color: #343a40;
-    /* Darker gray on hover */
-}
-
-.events {
-    margin-bottom: 36px;
-    padding: 16px 26px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-radius: 10px;
-    width: -webkit-fill-available;
-
-    h2 {
-        font-weight: 700;
-    }
-
-    @media (max-width: 576px) {
-        padding: 10px 16px;
-    }
-
-    .content {
-        justify-content: space-between;
-
-        .event-text {
-            font-weight: 500;
-            width: 45%;
-            text-align: justify;
-
-            h4 {
-                font-weight: 700;
-            }
-
-            @media (max-width: 576px) {
-                width: fit-content;
-            }
+        h2 {
+            font-weight: 700;
         }
 
-        .event-detail {
-            width: 45%;
-            margin-left: 16px;
-            // justify-content: center;
-            position: sticky; // fix for sticky
-            top: 30px; // fix for sticky
-            height: fit-content; // fix for sticky
-
-            @media (max-width: 576px) {
-                width: inherit;
-            }
+        @media (max-width: 576px) {
+            padding: 10px 16px;
         }
-    }
-}
 
-.register-btn {
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
-    justify-content: center;
+        .back-btn {
+            border: 1px solid #6c757d;
+            /* Subtle gray */
+            border-radius: 8px;
+            background-color: #717d4b;
+            width: fit-content;
+            padding: 0px 16px;
+            // display: inline-flex;
+            // align-items: center;
+            color: white;
+            /* Subtle gray */
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease-in-out;
+        }
 
-    a {
-        padding: 10px 16px;
-        border-radius: 8px;
-        text-decoration: none;
-        background-color: #717d4b;
-        color: white;
+        .back-btn:hover {
+            color: #343a40;
+            /* Darker gray on hover */
+        }
 
-        &:hover {
-            border: 2px solid #717d4b;
+        .content {
+            justify-content: space-between;
+
+            .event-text {
+                font-weight: 500;
+                width: 45%;
+                text-align: justify;
+
+                h4 {
+                    font-weight: 700;
+                }
+
+                @media (max-width: 576px) {
+                    width: fit-content;
+                }
+            }
+
+            .event-detail {
+                width: 45%;
+                margin-left: 16px;
+                // justify-content: center;
+                position: sticky; // fix for sticky
+                top: 30px; // fix for sticky
+                height: fit-content; // fix for sticky
+
+                @media (max-width: 576px) {
+                    width: inherit;
+                }
+            }
+
+            .event-text,
+            .event-detail {
+                .register-btn {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 16px;
+                    justify-content: center;
+
+                    a {
+                        padding: 10px 16px;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        background-color: #717d4b;
+                        color: white;
+
+                        &:hover {
+                            border: 2px solid #717d4b;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 .img {
-    img{
-        max-width: 350px;
+    img {
         width: 350px;
     }
-} 
+}
 
 .fr {
     float: right;

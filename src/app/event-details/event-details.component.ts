@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-event-details',
@@ -11,13 +10,9 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 })
 export class EventDetailsComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute,
-    private sanitizer: DomSanitizer
-  ) { }
+  constructor(private route: ActivatedRoute) { }
 
   itemId: any = "";
-  safeContent: SafeHtml = '';
-  itemDetails: any;
 
   ngOnInit(): void {
     this.itemId = this.route.snapshot.paramMap.get('id') || "";
