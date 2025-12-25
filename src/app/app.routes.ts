@@ -6,9 +6,11 @@ import { MediaCoverageComponent } from './media-coverage/media-coverage.componen
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DonationComponent } from './donation/donation.component';
 import { HomeComponent } from './home/home.component';
+import { MsmeComponent } from './msme/msme.component';
 
 export const routes: Routes = [{ path: '', component: HomeComponent },
 { path: 'gallery', component: GalleryComponent },
+{ path: 'msme', component: MsmeComponent },
 { path: 'events', component: EventsComponent },
 { path: 'events/:id', component: EventDetailsComponent },
 { path: 'media-coverage', component: MediaCoverageComponent },
